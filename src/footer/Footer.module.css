@@ -1,0 +1,33 @@
+
+.footerBlock{
+    background-color: rgb(175, 231, 255);
+}
+
+.footerContainer {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 20vh;
+}
+
+.socialBlock{
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.socialIcons {
+     width: 30px;
+     height: 30px;
+     background-color: cornflowerblue;
+     margin-bottom: 15px;
+}
+
+
+@media (max-width: 767px) {
+    .socialBlock { width: 100%; justify-content: space-evenly;}
+    
+}

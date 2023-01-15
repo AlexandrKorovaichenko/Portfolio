@@ -1,0 +1,24 @@
+
+
+.aboutMe{
+    background-color: rgb(175, 231, 255);
+}
+
+
+.text{
+    width: 300px;
+}
+
+
+.photo{
+    width: 300px;
+    height: 400px;
+    background: #fff;
+}
+
+
+@media (max-width: 767px) {
+    .aboutMe h1 {  
+        font-size: 24px;
+    }
+}
