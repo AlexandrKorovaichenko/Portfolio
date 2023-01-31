@@ -1,0 +1,47 @@
+@import '../common/styles/sass/mixins.scss';
+@import '../common/styles/sass/variables.scss';
+
+
+
+.remoteWork{
+
+    background-color: #edede3;
+
+    .containerRemoteWork{
+        width: 65%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        padding-top: 30px;
+        padding-bottom: 50px;
+
+        h2{
+            @include text($titleFont, 30px, 300);
+            @media (max-width: 767px) { text-align: center;}
+        }
+
+        button{
+            padding: 10px 20px;
+            background-color: #4e93e6;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            border-radius: 3px;        
+        }
+
+        &::before {
+            width: 230px;
+            border: 1px solid $textColorAll;
+            content: "";
+            position: absolute;
+            left: 50%;
+            margin-left: -115px;
+            bottom: 0px;
+        }
+
+    }
+}
+

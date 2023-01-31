@@ -1,0 +1,39 @@
+@import '../common/styles/sass/variables.scss';
+@import '../common/styles/sass/mixins.scss';
+
+.navigation{
+
+    display: flex;
+    width: 65%;
+    height: 80px;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+
+    a {
+        margin-right: 30px;
+        text-decoration: none;
+        color: $textColorHeader;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        @include text($descriptionFont, 14px, 400);
+    }
+
+    a:last-child {
+        margin-right: 0px;
+    }
+
+    @media (max-width: 767px) {
+        a{ margin-right: 0px; }
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    @media (max-width: 500px) {
+        justify-content: space-around;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+}
+

@@ -1,6 +1,5 @@
 
-import styleContainer from '../common/styles/Container.module.css';
-import style from './RemoteWork.module.css';
+import style from './RemoteWork.module.scss';
 
 function RemoteWork() {
   return (
