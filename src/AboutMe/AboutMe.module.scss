@@ -1,0 +1,56 @@
+
+@import "../common/styles/sass/variables.scss";
+@import "../common/styles/sass/mixins.scss";
+
+.aboutMe{
+    background: #edede3;
+    padding-bottom: 50px;
+    .text{
+        width: 50%;
+        margin: 0 auto;
+        @include text($descriptionFont, 24px, 700);
+        text-align: center;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+    
+    .photo{
+        width: 50%;
+        background: #fff;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            vertical-align:bottom;
+        }
+    }
+
+    @media (max-width: 767px) {
+
+    }
+
+    @media (max-width: 767px) {
+        flex-direction: row;
+        h1 { @include text($descriptionFont, 20px, 700);
+            margin: 5px 0px;    
+        }
+
+        span { @include text($descriptionFont, 18px, 400) }
+        
+        p { @include text($descriptionFont, 16px, 400); 
+            margin: 5px 0 15px 0;
+        }
+
+    }
+    
+}
+
+
+
+
+
+
+
+

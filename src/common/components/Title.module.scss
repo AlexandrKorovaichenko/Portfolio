@@ -1,0 +1,35 @@
+
+@import '../styles/sass/variables.scss';
+@import '../styles/sass/mixins.scss';
+
+
+.title {
+    margin: 0 0 75px;
+    color: $textColorAll;
+    text-transform: capitalize;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    position: relative;
+    margin-top: 50px;
+
+    &::before {
+        width: 55px;
+        border: 1px solid $textColorAll;
+        content: "";
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        margin-left: -27.5px;
+    }
+
+
+    h2{
+        margin: 0px;        
+        @include text($titleFont, 36px, 700);
+    }
+
+}
+
+
+
+

@@ -1,6 +1,6 @@
 
-import styleContainer from '../common/styles/Container.module.css';
-import style from './Contacts.module.css';
+import styleContainer from '../common/styles/Container.module.scss';
+import style from './Contacts.module.scss';
 
 function Contacts() {
   return (
@@ -13,7 +13,7 @@ function Contacts() {
           <form name="contacts">
             <input type="text" />
             <input type="text" />
-            <textarea />
+            <textarea rows="4"/>
             <button>Отправить</button>
           </form>
         </div>

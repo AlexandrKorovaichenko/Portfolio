@@ -1,0 +1,33 @@
+
+.projectsBlock{
+
+    background: #4e93e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .projectsContainer {
+        padding: 50px 0px;   
+        position: relative; 
+        justify-content: center;
+
+        .projects {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+
+            @media (max-width: 767px) {
+                
+                .projects { margin-bottom: 10px; 
+                    justify-content: center;
+                }
+
+                .projectsContainer :last-child { margin-bottom: 0px; }
+
+            }
+
+        }
+    }
+}

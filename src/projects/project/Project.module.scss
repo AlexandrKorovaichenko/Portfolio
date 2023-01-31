@@ -1,0 +1,87 @@
+
+@import '../../common/styles/sass/variables.scss';
+@import '../../common/styles/sass/mixins.scss';
+
+.project {
+
+    width: 250px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $bgColor;
+
+    @media (max-width: 767px) {
+        margin-bottom: 10px;
+        button {
+            margin: 10px 0 10px 0;
+        }
+    }
+
+    .icon {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        flex-grow: 2;
+
+        /*&::before{
+            position: absolute;
+            content: "";
+            background-color: black;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0.4;
+        }*/
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+    button{
+        position: relative;
+        padding: 10px 20px;
+        background-color: $primaryColor;
+        z-index: 1;
+        border: none;
+        color: $textColorHeader;
+        margin-bottom: 20px;
+    }
+
+    .projectInfo{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px 20px;
+
+        .projectTitle{
+            @include text($titleFont, 21px, 700);
+            color: $textColorHeader;
+            letter-spacing: 1px;            
+            margin-bottom: 15px;
+            margin: 0 0 15px;
+        }
+        
+        .description{
+            @include text($descriptionFont, 12px, 400);
+            color: $textColorHeader;
+            line-height: 1.8;
+            text-align: left;
+        }
+
+    }
+    
+}
+
+
+// @media (max-width: 767px) {
+//     .project button {
+//         margin: 10px 0 10px 0;
+//     }
+// }
